@@ -1,0 +1,84 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ vector<string> solar_sys = {"mer","venus","earth","mars","jupiter","saturn","uranus","neptune"};
+ 
+ vector<string>::iterator shivam = solar_sys.begin();
+ vector<string>::iterator champa = solar_sys.begin();
+
+ //cout<<"shivam is at"<<shivam<<endl;
+ //advance(shivam,3);
+ //cout<<*next(shivam,1)<<endl;
+
+ cout<<"Distance from shivam"<<distance(champa,shivam )<<endl;
+ 
+
+ //cout<<*shivam<<endl;
+ //cout<<"let's go to earth"<<*(shivam+2)<<endl;
+
+ return 0;
+}
+
+_____________________________________________________________________________________
+_____________________________________________________________________________________
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ vector<int> v = {1,2,3,4,5,6,7,8,9};
+
+ //vector<int>::iterator it = v.begin;
+
+ for(vector<int>::iterator it = v.begin(); it != v.end(); it++)
+ {
+   cout<<*it<<" ";
+  }
+
+  return 0;
+}
+
+______________________________________________________________________________________
+______________________________________________________________________________________
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  // v[i] == v.at();
+  list<int>l;
+  l.push_back(10);
+  l.push_back(20);
+  l.push_front(30);
+
+  //list<int>::iterator it = l.begin();
+
+  for(list<int>::iterator it = l.begin();it!= l.end();it++)
+  {
+    cout<<*it<<" ";
+  }
+
+  l.push_front(120);
+  
+  l.pop_back();
+  l.pop_front();
+
+  for(list<int>::iterator it = l.begin();it!= l.end();it++)
+  {
+    cout<<*it<<" ";
+  }
+  
+  //reverse(v.begin(),v.end());
+  // sort(v.begin(),v.end(),greater<int>());
+  l.reverse();
+  l.sort();
+  
+  //cout<<l.empty();
+
+  return 0;
+}
+  
